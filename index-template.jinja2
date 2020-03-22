@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Übersicht Meine Stadt Transparent</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+</head>
+<body>
+
+<article class="container">
+    <h1 class="mt-3">Meine Stadt Transparent</h1>
+
+    <p>Wir wollen Stadtpolitik für alle verständlich machen. Meine Stadt Transparent ermöglicht es, die öffentlichen
+        Informationen aus einem städtischen Ratsinformationssystem modern und benutzerfreundlich aufzubereiten. Die
+        Software ist Open Source und kann von jedem genutzt und für beliebige Städte angepasst werden. Die Webseiten für
+        die verschiedenen Städte werden ehrenamtlich betrieben.</p>
+
+    <p><a href="about.html">Mehr erfahren</a></p>
+
+    <h2>Für welche Städte gibt es Meine Stadt Transparent?</h2>
+
+    <p>Auf dieser Seite finden sich die <a href="#existing">existierenden Städte</a>, die <a href="#oparl">Städte mit
+        OParl-Schnittstelle</a>, <a href="#possible">weitere mögliche Städte</a> und ein <a
+            href="#imprint">Impressum</a>.</p>
+
+    <p>Instanzen von <a href="https://github.com/meine-stadt-transparent/meine-stadt-transparent">Meine Stadt
+        Transparent</a> werden entweder direkt von uns oder von Projekten vor Ort betrieben. Auch für nicht gelistete
+        Städte, die eine OParl-Schnittstelle einrichten, kann Meine Stadt Transparent installiert werden.</p>
+
+    <div class="input-group mb-3">
+        <input type="text" id="search-field" class="form-control" placeholder="Suche" aria-label="Filter"
+               aria-describedby="Filter existing cities">
+    </div>
+
+    <h2 id="existing">Exisitierende Städte</h2>
+
+    <table class="table" id="existing-list">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">URL</th>
+            <th scope="col">Original RIS</th>
+        </tr>
+        </thead>
+        <tbody class="list">
+        {% for city in cities %}
+            <tr>
+                <th scope="row" class="mst-name">{{ city.name }}</th>
+                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a></td>
+                <td><a class="mst-ris" href="{{ city.ris }}">{{ city.ris }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h2 id="oparl">Mögliche Städte (OParl)</h2>
+
+    <p>Diese Städte bieten eine <a href="https://oparl.org/">OParl-API</a> an. Leider haben einige der Schnittstellen
+        Fehler, die die Nutzung unmöglich machen.</p>
+
+    <table class="table" id="oparl-list">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">OParl Endpunkt</th>
+        </tr>
+        </thead>
+        <tbody class="list">
+        {% for city in oparl_cities %}
+            <tr>
+                <th scope="row" class="mst-title">{{ city.title }}</th>
+                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h2 id="possible">Weitere Mögliche Städte</h2>
+
+    <p>Diese Liste ist automatisch generiert und enthält daher leider Fehler.
+        <a href="https://github.com/konstin/ris-vendor-stats">Rohdaten auf GitHub</a></p>
+
+    <table class="table" id="possible-list">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Original RIS</th>
+        </tr>
+        </thead>
+        <tbody class="list">
+        {% for city in possible_cities %}
+            <tr>
+                <th scope="row" class="mst-name">{{ city.name }}</th>
+                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h2 id="imprint">Impressum</h2>
+    <p>
+        Konstantin Schütze<br/>
+        c/o RA Matutis<br/>
+        Berliner Straße 57<br/>
+        14467 Potsdam
+    </p>
+
+    <p>
+        <i class="fa fa-envelope"></i><a href="mailto:info@meine-stadt-transparent.de">
+        info@meine-stadt-transparent.de</a><br/>
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/meine_stadt_t"> meine_stadt_t</a>
+    </p>
+
+    <h3>Verantwortlich für redaktionelle Inhalte</h3>
+    <p>Konstantin Schütze</p>
+
+</article>
+
+<script src="node_modules/list.js/dist/list.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="search.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
