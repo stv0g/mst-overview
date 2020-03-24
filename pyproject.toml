@@ -9,6 +9,7 @@ python = "^3.7"
 Jinja2 = "^2.11.1"
 pandas = "^1.0.3"
 pyyaml = "^5.3.1"
+mkdocs = "^1.1"
 
 [tool.poetry.dev-dependencies]
 black = "19.10b0"
