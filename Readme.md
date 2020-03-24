@@ -8,15 +8,7 @@ Install poetry, node and npm. Clone https://github.com/konstin/ris-vendor-stats,
 
 ```shell script
 poetry install
-poetry run ./main.py
 npm install
-npm run build
-cd ../meine-stadt-transparent
-cp Readme.md docs/index.md
-mkdocs build --clean
-cp -r envs site/envs
-cd ../mst-overview
-cp -r ../meine-stadt-transparent/site dist/site
 ```
 
 Open [dist/index.html](dist/index.html)
