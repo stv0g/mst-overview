@@ -14,7 +14,7 @@ let listObj3 = new List("possible-list", {
 });
 
 $("#search-field").on("keyup", function () {
-    var searchString = $(this).val();
+    let searchString = $(this).val();
     listObj1.search(searchString);
     listObj2.search(searchString);
     listObj3.search(searchString);
