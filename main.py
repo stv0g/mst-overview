@@ -60,8 +60,8 @@ def get_possible() -> DataFrame:
 def main():
     template = Path("index-template.jinja2").read_text()
 
-    existing = pandas.read_csv("existing.csv")
-    cities = list(existing[["name", "ris", "url"]].T.to_dict().values())
+    existing = pandas.read_csv("existing.csv").fillna("")
+    cities = list(existing[["name", "ris", "url", "comment"]].T.to_dict().values())
     possible_cities = list(get_possible()[["name", "url"]].T.to_dict().values())
 
     oparl_cities = yaml.safe_load(Path("../resources/endpoints.yml").read_text())

@@ -56,7 +56,7 @@
         {% for city in cities %}
             <tr>
                 <th scope="row" class="mst-name">{{ city.name }}</th>
-                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a></td>
+                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a>{% if city.comment != "" %}<div class="text-muted">{{ city.comment }}</div>{% endif %}</td>
                 <td><a class="mst-ris" href="{{ city.ris }}">{{ city.ris }}</a></td>
             </tr>
         {% endfor %}
