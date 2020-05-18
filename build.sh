@@ -1,6 +1,6 @@
 set -e
 
-rm -r dist
+rm -rf dist
 poetry run ./main.py
 npm run build
 cd ../meine-stadt-transparent
