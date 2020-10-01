@@ -22,7 +22,7 @@ def get_possible() -> DataFrame:
     """
     # Get the paths of the last three files
     [back2_path, back1_path, current_path] = sorted(
-        Path("../ris-vendor-stats/").glob("*.csv")
+        Path("ris-vendor-stats").glob("*.csv")
     )[-3:]
 
     # Read it into one big JOIN
@@ -64,7 +64,7 @@ def main():
     cities = list(existing[["name", "ris", "url", "comment"]].T.to_dict().values())
     possible_cities = list(get_possible()[["name", "url"]].T.to_dict().values())
 
-    oparl_cities = yaml.safe_load(Path("../resources/endpoints.yml").read_text())
+    oparl_cities = yaml.safe_load(Path("resources/endpoints.yml").read_text())
     Path("index.html").write_text(
         Template(template).render(
             cities=cities, possible_cities=possible_cities, oparl_cities=oparl_cities

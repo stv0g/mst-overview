@@ -1,15 +1,14 @@
 name,vendor,ris,version,population,ags,wikidata_item,website,pages_visited,time,url,comment
-Bielefeld,somacos,https://anwendungen.bielefeld.de/bi/info.asp,5.0.8 bi (Layout 5),333786,05711000,http://www.wikidata.org/entity/Q2112,https://www.bielefeld.de/,6,38.24044193699956,https://bielefeld.meine-stadt-transparent.de,
 Dresden,somacos,https://ratsinfo.dresden.de/infobi.php,5.1.3 bi (Layout3),554649,14612000,http://www.wikidata.org/entity/Q1731,https://www.dresden.de/,11,81.11322246864438,https://dresden.meine-stadt-transparent.de,
 Karlsruhe,somacos,https://web3.karlsruhe.de/Gemeinderat/ris/bi/to0040.php?__ksinr=6016,4.8.1 K3 bi (Layout3),313092,08212000,http://www.wikidata.org/entity/Q1040,https://www.karlsruhe.de/,20,161.5530649125576,https://karlsruhe.meine-stadt-transparent.de,
 Köln,somacos,https://ratsinformation.stadt-koeln.de/infobi.asp,4.8.4 bi (Layout 4),1085664,05315000,http://www.wikidata.org/entity/Q365,http://www.stadt-koeln.de,10,106.67732773348689,https://köln.meine-stadt-transparent.de,
 Krefeld,,https://ris.krefeld.de/,,,,,,,,https://krefeld.meine-stadt-transparent.de,
 Landshut,somacos,https://ris.landshut.de/buergerinfo/infobi.php,4.9.6 bi (Layout 3),72404,09261000,http://www.wikidata.org/entity/Q3974,http://www.landshut.de,14,113.41558519750834,https://landshut-transparent.de,""
+Leipzig,CC e-gov,https://ratsinfo.leipzig.de/bi/allris.net.asp,3.9.4 (191209m),"","","",https://www.leipzig.de/,"","",https://leipzig.meine-stadt-transparent.de,""
 Magdeburg,somacos,https://ratsinfo.magdeburg.de/info.asp,5.0.8 bi (Layout 5),238697,15003000,http://www.wikidata.org/entity/Q1733,https://www.magdeburg.de/,4,39.78729133680463,https://magdeburg.meine-stadt-transparent.de,""
 Moers,somacos,https://sessionnet.krz.de/moers/bi/infobi.asp,4.9.7 bi (Layout4),103725,05170024,http://www.wikidata.org/entity/Q3132,https://www.moers.de/,5,40.62364086136222,https://moers.meine-stadt-transparent.de,
 München,,https://www.ris-muenchen.de/RII/RII/ris_startseite.jsp,,,,,,,,https://www.muenchen-transparent.de,Hinweis: München Transparent ist eine ältere Software
 Münster,somacos,https://www.stadt-muenster.de/sessionnet/sessionnetbi/infobi.php,4.6.6K4 bi (Layout3),314319,05515000,http://www.wikidata.org/entity/Q2742,https://www.muenster.de/,3,44.240288373082876,https://meine-stadt-transparent.codeformuenster.org,
-Nürnberg,somacos,https://online-service2.nuernberg.de/buergerinfo/info.asp,5.1.2 KP1 bi (Layout 5),518365,09564000,http://www.wikidata.org/entity/Q2090,https://www.nuernberg.de/,2,27.162393115460873,https://nürnberg.meine-stadt-transparent.de,
 Oelde,somacos,https://sessionnet.krz.de/oelde/bi/info.asp,5.1.1 bi (Layout 5),29326,05570028,http://www.wikidata.org/entity/Q2752,http://www.oelde.de,5,44.58365900814533,https://oelde.meine-stadt-transparent.de,
 Schwerin,somacos,https://bis.schwerin.de/info.asp,5.1.3 bi (Layout 5),95818,13004000,http://www.wikidata.org/entity/Q1709,https://www.schwerin.de/,4,27.158084828406572,https://schwerin.meine-stadt-transparent.de,
 Ulm,somacos,https://buergerinfo.ulm.de/infobi.php,5.0.5 bi (Layout 3),126329,08421000,http://www.wikidata.org/entity/Q3012,https://www.ulm.de/?ref=sharedSp,24,219.8107608370483,https://ulm.meine-stadt-transparent.de,

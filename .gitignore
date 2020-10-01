@@ -1,5 +1,7 @@
-dist
-node_modules
-.venv
 .cache
+.venv
+dist
 index.html
+node_modules
+resources
+ris-vendor-stats
