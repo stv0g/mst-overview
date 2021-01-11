@@ -1,4 +1,5 @@
 name,vendor,ris,version,population,ags,wikidata_item,website,pages_visited,time,url,comment
+Bielefeld,somacos,https://anwendungen.bielefeld.de/bi/info.asp,5.0.8 bi (Layout 5),333786,05711000,http://www.wikidata.org/entity/Q2112,https://www.bielefeld.de/,5,2.613927131984383,https://bielefeld.meine-stadt-transparent.de,
 Dresden,somacos,https://ratsinfo.dresden.de/infobi.php,5.1.3 bi (Layout3),554649,14612000,http://www.wikidata.org/entity/Q1731,https://www.dresden.de/,11,81.11322246864438,https://dresden.meine-stadt-transparent.de,
 Karlsruhe,somacos,https://web3.karlsruhe.de/Gemeinderat/ris/bi/to0040.php?__ksinr=6016,4.8.1 K3 bi (Layout3),313092,08212000,http://www.wikidata.org/entity/Q1040,https://www.karlsruhe.de/,20,161.5530649125576,https://karlsruhe.meine-stadt-transparent.de,
 Köln,somacos,https://ratsinformation.stadt-koeln.de/infobi.asp,4.8.4 bi (Layout 4),1085664,05315000,http://www.wikidata.org/entity/Q365,http://www.stadt-koeln.de,10,106.67732773348689,https://köln.meine-stadt-transparent.de,
