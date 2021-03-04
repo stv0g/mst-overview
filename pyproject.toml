@@ -5,7 +5,7 @@ description = "Generates the city overview for https://meine-stadt-transparent.d
 authors = ["konstin <konstin@mailbox.org>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.7.1"
 Jinja2 = "^2.11.1"
 pandas = "^1.0.3"
 pyyaml = "^5.3.1"

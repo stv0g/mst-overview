@@ -24,7 +24,10 @@
 
     <p>Auf dieser Seite finden sich die <a href="#existing">existierenden Städte</a>, die <a href="#oparl">Städte mit
         OParl-Schnittstelle</a>, <a href="#possible">weitere mögliche Städte</a> und ein <a
-            href="#imprint">Impressum</a>.</p>
+            href="#imprint">Impressum</a>.
+        Die Liste der Städte ist nicht vollständig, und auch für hier nicht aufgeführte Städte und Gemeinden können
+        OParl-Schnittstellen eingerichtet werden.
+    </p>
 
     <p>Instanzen von <a href="https://github.com/meine-stadt-transparent/meine-stadt-transparent">Meine Stadt
         Transparent</a> werden entweder direkt von uns oder von Projekten vor Ort betrieben. Auch für nicht gelistete
@@ -56,7 +59,8 @@
         {% for city in cities %}
             <tr>
                 <th scope="row" class="mst-name">{{ city.name }}</th>
-                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a>{% if city.comment != "" %}<div class="text-muted">{{ city.comment }}</div>{% endif %}</td>
+                <td><a class="mst-url" href="{{ city.url }}">{{ city.url }}</a>{% if city.comment != "" %}
+                    <div class="text-muted">{{ city.comment }}</div>{% endif %}</td>
                 <td><a class="mst-ris" href="{{ city.ris }}">{{ city.ris }}</a></td>
             </tr>
         {% endfor %}
@@ -67,7 +71,8 @@
 
     <p>
         Diese Städte bieten eine <a href="https://oparl.org/">OParl-API</a> an.
-        Einzelne Schnittstellen sind möglicherweise fehlerhaft, deshalb muss jede Schnittstelle vor einem Einsatz getestet werden.
+        Einzelne Schnittstellen sind möglicherweise fehlerhaft, deshalb muss jede Schnittstelle vor einem Einsatz
+        getestet werden.
     </p>
 
     <table class="table" id="oparl-list">
@@ -89,8 +94,10 @@
 
     <h2 id="possible">Weitere Mögliche Städte</h2>
 
-    <p>Diese Liste ist automatisch generiert und enthält daher leider Fehler.
-        <a href="https://github.com/konstin/ris-vendor-stats">Rohdaten auf GitHub</a></p>
+    <p>Diese Städte bieten bisher keine uns bekannte OParl-Schnittstelle an, können aber ggf. trotzdem importiert
+        werden.
+        Diese Liste ist automatisch generiert und enthält daher leider Fehler.
+        Die Rohdaten finden sich auf <a href="https://github.com/konstin/ris-vendor-stats">GitHub</a></p>
 
     <table class="table" id="possible-list">
         <thead>
