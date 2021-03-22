@@ -10,8 +10,8 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
-    "parcel-bundler": "^1.12.4"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "parcel-bundler": "^1.12.5"
   },
   "scripts": {
     "start": "parcel index.html about.html",
