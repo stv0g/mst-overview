@@ -54,7 +54,11 @@ def get_possible() -> DataFrame:
     print(
         f"Concensus with this week {len(confirmed_by_prior)}. Concensus in last two weeks: {len(last_two_concensus)}"
     )
-    return pandas.concat([confirmed_by_prior, last_two_concensus]).sort_values("name")
+    return (
+        pandas.concat([confirmed_by_prior, last_two_concensus])
+        .sort_values("name")
+        .drop_duplicates()
+    )
 
 
 def main():
